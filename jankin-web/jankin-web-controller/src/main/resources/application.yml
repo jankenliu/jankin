@@ -2,13 +2,17 @@
 server:
   port: 8080
   address: 127.0.0.1
-  sessionTimeout: 30
   contextPath: /
 
   # Tomcat specifics
   tomcat:
-    accessLogEnabled: false
     protocolHeader: x-forwarded-proto
     remoteIpHeader: x-forwarded-for
     basedir:
     backgroundProcessorDelay: 30 # secs
+
+spring:
+   mvc:
+      view:
+          prefix: /WEB-INF/jsp/
+          suffix: .jsp

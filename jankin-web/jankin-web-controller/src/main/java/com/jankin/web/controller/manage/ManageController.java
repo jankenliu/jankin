@@ -22,9 +22,8 @@ import java.io.IOException;
 public class ManageController {
 
     @RequestMapping("hello")
-    @ResponseBody
     public String hello(){
-        return "hello";
+        return "index";
     }
 
 
